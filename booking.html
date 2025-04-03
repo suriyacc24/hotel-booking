@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .payment-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+        }
+        .payment-btn {
+            background: #f7e44d;
+            color: #000;
+            font-weight: bold;
+        }
+        .payment-btn i {
+            margin-right: 5px;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+        .payment-footer {
+            text-align: center;
+            font-size: 12px;
+            color: gray;
+            margin-top: 20px;
+        }
+        .icons img {
+            width: 40px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="payment-container shadow">
+        <h5 class="text-center">Payment Details</h5>
+        
+        <div class="mb-3">
+            <label class="form-label">Card Holder Name</label>
+            <input type="text" class="form-control" placeholder="Card Holder Name">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Card Number</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Card Number">
+                <div class="input-group-text bg-white border-0">
+                    <div class="icons">
+                        <img src="vsa.png" alt="Visa">
+                        <img src="master.png" alt="MasterCard">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" placeholder="MM/YY">
+            </div>
+            <div class="col-6">
+                <label class="form-label">CVV</label>
+                <input type="text" class="form-control" placeholder="000">
+            </div>
+        </div>
+
+        <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" id="saveCard">
+            <label class="form-check-label" for="saveCard">
+                Save my card for faster checkout <i class="fas fa-question-circle"></i>
+            </label>
+        </div>
+
+        <button class="btn payment-btn w-100 mt-3">
+            <i class="fas fa-lock"></i> PAY 2500.00
+        </button>
+
+        <p class="text-center mt-2">
+            By clicking the button you confirm to have accepted
+            <a href="#">Terms of Service</a>
+        </p>
+        
+        <div class="payment-footer">
+            <p>Verified by 
+               <div class="icons"> <img src="./vsa.png" alt="Visa Secure">
+                <img src="./master.png" alt="MasterCard Secure"></div>
+            </p>
+            <p>Powered by Paymentwall. <a href="#">Privacy Policy</a>. <a href="#">Help</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

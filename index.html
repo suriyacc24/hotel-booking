@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Audiowide&family=Barriecito&family=Piedra&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Trade+Winds&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Barriecito&family=Rubik+Moonrocks&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Barriecito&family=Piedra&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Trade+Winds&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Barriecito&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Trade+Winds&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Barriecito&family=Rubik+Glitch&family=Rubik+Moonrocks&family=Trade+Winds&display=swap');
+    </style>
+    
+    <style>
+        
+         .bounce image{
+            width: 300px; /* Adjust as needed */
+            height: auto;
+            animation: bounce 3s ;
+        }
+        @keyframes bounce  {
+            0%, 100% {
+                transform: translateX(-70);
+            }
+            50% {
+                transform: translateX(20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <!-- main section-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark bg-gradient ">
+        <div class="container-fluid ">
+           <a class="navbar-brand text-light" href="#"><img src="./plces/R3.jpg" height="50px" width="50px"  style="border-radius: 50%;font-family:Trade     winds ;" alt=""> &nbsp; Relax Hotel</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end" style="width: 100%;">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" id="hover" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" id="hover" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" id="hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Yours
+                    </a>
+                    <ul class="dropdown-menu" id="hover"  aria-labelledby="navbarDropdown">
+                    <li><a  class="dropdown-item text-dark" href="#">Classical rooms</a></li>
+                    <li><a  class="dropdown-item text-dark" href="#">Food Order</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a  class="dropdown-item text-dark" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-light" id="hover" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-xxl py-5 bg-success hero-header mb-5" id="back">
+        <div class="container my-5 py-5">    
+            <div class="row align-items-center g-5">
+                
+                <!-- Left Content -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 text-white animated slideInLeft" style="font-family:Aladin;">
+                        Enjoy Our<br>Wonderful Stay
+                    </h1>
+                    <p class="text-white animated slideInLeft mb-4 pb-2" style="font-family:Trade winds;">
+                        Experience the pinnacle of comfort and elegance with a luxury hotel stay. Enjoy beautifully 
+                        designed suites with world-class amenities. Savor gourmet cuisine crafted by renowned chefs. 
+                        Relax in a serene spa with rejuvenating treatments.
+                    </p>
+                    <!-- Responsive Button -->
+                    <!-- <div class="text-center text-lg-start">
+                        <a href="/booking.html" id="hovered" class="btn btn-warning px-4 py-3 fw-bold d-block d-md-block w-100 w-md-auto">
+                            Book A Hotel
+                        </a>
+                    </div> -->
+                </div>
+    
+                <!-- Right Image -->
+                <div class="col-lg-6 text-center">
+                    <img src="./plces/hoells5.jpg" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+        <!-- end -->
+
+        <!-- Service start              -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fedeInup" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5 style="font-family:Aladin;font-size: 30px;color:orangered;">Master
+                                    guide
+                                </h5>
+                                <p style="font-family: Piedra;">Hotel guide staff are available to assist with all guest
+                                    inquiries and needs. They provide information on hotel services, amenities, and
+                                    local attractions. Guests can contact them for reservations, transportation, or
+                                    special requests.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fedeInup">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5 style="font-family:Aladin;font-size: 30px;color:orangered;">Quality Staff
+                                </h5>
+                                <p style="font-family: Piedra;">Quality staff deliver exceptional service with
+                                    professionalism perfect and dedication. They ensure guest satisfaction through
+                                    efficiency, hospitality, and expertise. Committed to excellence, they create a
+                                    seamless and memorable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 fedeInup">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5 style="font-family:Aladin;font-size: 30px;color:orangered;">Online Booking
+                                </h5>
+                                <p style="font-family: Piedra;">Online hotel booking offers a secure, convenient, and
+                                    hassle-free experience. Trusted platforms genuine service with verified listings and
+                                    secure payments. Enjoy instant confirmation and reservations anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 fedeInup">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5 style="font-family:Aladin;font-size: 30px;color:orangered;">24/7 Service
+                                </h5>
+                                <p style="font-family: Piedra;">Our hotel is available 24/7, ensuring a safe and secure
+                                    stay for all guests. With round-the-clock security and dedicated staff, your comfort
+                                    and safety are our top priorities. Enjoy peace of mind with reliable services at any
+                                    hour.</p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         
+    </div>
+
+    <!-- end -->
+
+
+
+    <!-- about section -->
+
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center-">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img src="./plces/R8.jpg" id="surii" class="img-fluid rounded w-80 wow zoomIn"
+                                    style="margin-top:56%;margin-left: 28%;" alt="">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img src="./plces/R5.jpg" id="suri" class="img-fluid rounded w-75 wow zoomIn"
+                                    style="margin-top:25%;" alt="">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="./plces/R11.jpg" id="suri" class="img-gluid rounded w-75 wow zoomIn"
+                                    style="margin-bottom:30%;" alt="">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img src="./plces/R2.jpg" id="surii" class="img-fluid rounded w-80 wow zoomIn"
+                                    style="margin-bottom:30%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to </i>Our Hotel</h1>
+                        <p class="mb-4" style="font-family: Rubik Moonrocks
+    ;">Enjoy well-appointed rooms, world-class amenities, and breathtaking views. Relax in a serene ambiance with
+                            exceptional hospitality and personalized service. Every moment is designed to make your stay
+                            unforgettable.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-s-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0">15</h1>
+                                    <div class="ps-4">
+                                        <div class="mb-0">years of </div>
+                                        <h6 class="text-uppercase mb-0">EXPERIENCE</h6>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0">50</h1>
+                                    <div class="ps-4">
+                                        <div class="mb-0"> Popular </div>
+                                        <h6 class="text-uppercase mb-0">HOTEL</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="" class="btn btn-primary py-3 px-5 mt-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+<div class="slider-container">
+  <span class="sliding-text">Most Beautiful Rooms At Affordable Prices!</span>
+</div>
+        <!-- end -->
+
+
+
+
+        <!-- Menu section -->
+
+            <div class="container--xxl py-5">
+                <div class="container">
+                    <div class="text-center wow fedeInup" style="font-family: Rubik Moonrocks;">
+                        <h5 class="section-title ff-secondary text-center text-primary fw-normal">
+                            Hotel Menu
+                        </h5>
+                        <h1 class="mb-5">Most Attractable Rooms</h1>
+    
+                        <div class="tab-class tex-center wow fedeInup" data-wow-delay="">
+                            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5 ">
+                                <li class="nav-item" id="heart">
+                                    <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                        <i class="fa fa-heart fa-2x text-primary" id="heart"></i>
+                                        <div class="ps-3">
+                                            <small class="text-body">Fun</small>
+                                            <h6 class="mt-n1 mb-0">Happy</h6>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav-item" id="heart">
+                                    <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                        <i class="fa fa-share fa-2x text-primary" id="heart"></i>
+                                        <div class="ps-3">
+                                            <small class="text-body">Share</small>
+                                            <h6 class="mt-n1 mb-0">Your Happiness</h6>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="teb-content">
+                                <div class="tab-pane fade show p-0 active">
+                                    <div class="row g-4">
+                                        <!-- Room 1 -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="d-flex align-items-center flex-column flex-md-row">
+                                                <img src="./plces/R1.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Deluxe Room" width="120">
+                                                <div class="w-100 text-center text-md-start ps-md-4">
+                                                    <h5 class="border-bottom pb-2">
+                                                        <a href="#" class="rooms d-block">
+                                                            <span style="font-family:Aladin; font-size: 25px;">Deluxe Room</span>
+                                                            <span class="text-primary" style="font-size: 22px;">Rs.1800/-</span>
+                                                        </a>
+                                                    </h5>
+                                                    <small class="d-block">Spacious & Comfortable – Large, well-furnished rooms with cozy beds.</small>
+                                                    <a href="./booking.html" class="btn btn-danger w-100 mt-2">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Room 2 -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="d-flex align-items-center flex-column flex-md-row">
+                                                <img src="./plces/R2.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Executive Suite" width="120">
+                                                <div class="w-100 text-center text-md-start ps-md-4">
+                                                    <h5 class="border-bottom pb-2">
+                                                        <a href="#" class="rooms d-block">
+                                                            <span style="font-family:Aladin; font-size: 25px;">Executive Suite</span>
+                                                            <span class="text-primary" style="font-size: 22px;">Rs.1750/-</span>
+                                                        </a>
+                                                    </h5>
+                                                    <small class="d-block">Modern Amenities – High-speed Wi-Fi, smart TVs, premium toiletries.</small>
+                                                    <a href="./booking.html" class="btn btn-danger w-100 mt-2">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Room 3 -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="d-flex align-items-center flex-column flex-md-row">
+                                                <img src="./plces/R3.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Family Room" width="120">
+                                                <div class="w-100 text-center text-md-start ps-md-4">
+                                                    <h5 class="border-bottom pb-2">
+                                                        <a href="#" class="rooms d-block">
+                                                            <span style="font-family:Aladin; font-size: 25px;">Family Room</span>
+                                                            <span class="text-primary" style="font-size: 22px;">Rs.2000/-</span>
+                                                        </a>
+                                                    </h5>
+                                                    <small class="d-block">Immaculate Cleanliness – Fresh linens and top hygiene standards.</small>
+                                                    <a href="./booking.html" class="btn btn-danger w-100 mt-2">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Room 4 -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="d-flex align-items-center flex-column flex-md-row">
+                                                <img src="./plces/R5.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Ocean View" width="120">
+                                                <div class="w-100 text-center text-md-start ps-md-4">
+                                                    <h5 class="border-bottom pb-2">
+                                                        <a href="#" class="rooms d-block">
+                                                            <span style="font-family:Aladin; font-size: 25px;">Ocean View</span>
+                                                            <span class="text-primary" style="font-size: 22px;">Rs.2100/-</span>
+                                                        </a>
+                                                    </h5>
+                                                    <small class="d-block">Extras – Complimentary coffee, minibar, and personalized touches.</small>
+                                                    <a href="./booking.html" class="btn btn-danger w-100 mt-2">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Room 5 -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="d-flex align-items-center flex-column flex-md-row">
+                                                <img src="./plces/R7.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Luxury Kingroom" width="120">
+                                                <div class="w-100 text-center text-md-start ps-md-4">
+                                                    <h5 class="border-bottom pb-2">
+                                                        <a href="#" class="rooms d-block">
+                                                            <span style="font-family:Aladin; font-size: 25px;">Luxury Kingroom</span>
+                                                            <span class="text-primary" style="font-size: 22px;">Rs.2500/-</span>
+                                                        </a>
+                                                    </h5>
+                                                    <small class="d-block">Breathtaking Views – Stunning city, ocean, or garden views.</small>
+                                                    <a href="./booking.html" class="btn btn-danger w-100 mt-2">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Room 6 -->
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="d-flex align-items-center flex-column flex-md-row">
+                                                <img src="./plces/R8.jpg" class="img-fluid rounded mb-3 mb-md-0" alt="Presidential Room" width="120">
+                                                <div class="w-100 text-center text-md-start ps-md-4">
+                                                    <h5 class="border-bottom pb-2">
+                                                        <a href="#" class="rooms d-block">
+                                                            <span style="font-family:Aladin; font-size: 25px;">Presidential Room</span>
+                                                            <span class="text-primary" style="font-size: 22px;">Rs.1600/-</span>
+                                                        </a>
+                                                    </h5>
+                                                    <small class="d-block">Elegant Interior Design – Perfect blend of modern & classic aesthetics.</small>
+                                                    <a href="./booking.html" class="btn btn-danger w-100 mt-2">Book Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+
+
+
+        <!-- end -->
+
+        <!-- room statrt -->
+        <div class="container-xxl py-5 px-0 wow fadeInup ">
+            <div class="row g-0">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.youtube.com/embed/hNN9Q3GuWEM?si=TL03G2LL59l4Be0F" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 bg-dark align-items-center" style="font-family: Rubik Moonrocks;">
+                    <div class="p-5">
+                        <h5 class="section-title ff-secondary text-start text-primary fw">
+                            Reservation
+                        </h5>
+                        <h1 class="text-white mb-4">
+                            Book A Rooms
+                        </h1>
+                        <form action="">
+                            <div class="row g-3">
+                                <div class="col-mb-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="" placeholder="Your Name"
+                                            id="name">
+                                        <label for="name">Your Name...</label>
+                                    </div>
+                                </div>
+                                <div class="col-mb-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="" placeholder="Your Name"
+                                            id="Email">
+                                        <label for="name">Your Email...</label>
+                                    </div>
+                                </div>
+                                <div class="col-mb-6">
+                                    <div class="form-floating date" id="date3">
+                                        <input type="text" class="form-control" name="" placeholder="Date & Time"
+                                            id="Email" data-target="#date3" data-toggle="dateimpicker"
+                                            itemid="datetime">
+                                        <label for="name">Date & Time...</label>
+                                    </div>
+                                </div>
+                                <div class="col-mb-6">
+                                    <div class="form-floating">
+                                        <select name="" class="form-select" id="select1">
+                                            <option value="1">Single</option>
+                                            <option value="2">Couple</option>
+                                            <option value="3">Family</option>
+                                        </select>
+                                        <label for="select1">No of People</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" placeholder="Special Request"
+                                            style="height: 100px;">
+                            </textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3"><a class="btn-primary" href="./booking.html">Book Now </a>
+
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal Fade" id="videoModal" tabindex="-1" aria-labelledby="exampleMoadalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Youtube vedio</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/watch?v=qemqQHaeCYo" class="embed-responsive-item"
+                                    id="vedio" allowfullscreen="always" allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInup" style="font-family: Rubik Moonrocks;">
+                    <h5 class="section-title ff-secondary tex-center text-primary">
+                        Team Members
+                    </h5>
+                    <h1 class="mb-5">Incharge of Rooms</h1>
+                </div>
+                <div class="row" style="font-family: Aladin;font-size: 25px;">
+                    <div class="col-lg-3 col-md-6 wow fadeInup">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="./plces/g.jpg" height="100" width="100" alt="">
+                            </div>
+                            <h5 class="mb-0">Robert Carter</h5>
+                            <small>Coimbatore</small>
+                            <div class="d-flex justify-content-center mt-3 mb-2">
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInup">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="./plces/g1.jpg" height="140" width="140">
+                            </div>
+
+                            <h5 class="mb-0">David Michael</h5>
+                            <small>Chennai</small>
+                            <div class="d-flex justify-content-center mt-3 mb-2">
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInup">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="./plces/g2.jpg" height="140" width="140" alt="">
+                            </div>
+
+                            <h5 class="mb-0">Robert Thomson</h5>
+                            <small>Theni</small>
+                            <div class="d-flex justify-content-center mt-3 mb-2">
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInup">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="./plces/g9.jpg" height="140" width="140" alt="">
+                            </div>
+
+                            <h5 class="mb-0">Jhon Anderson</h5>
+                            <small>Madurai</small>
+                            <div class="d-flex justify-content-center mt-3 mb-2">
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-facebook"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="" id="icon" class="btn btn-square btn-info mx-1"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- footer -->
+
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeInup6">
+            <div class="container py-5">
+                <div class="row g-5">
+                    
+                    <!-- Company Section -->
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <h4 class="section-title ff-secondary text-primary fw-normal mb-4" style="font-family: Aladin;">
+                            Company
+                        </h4>
+                        <a href="" class="btn btn-link text-start d-block">About Us</a>
+                        <a href="" class="btn btn-link text-start d-block">Contact Us</a>
+                        <a href="" class="btn btn-link text-start d-block">Reservation</a>
+                        <a href="" class="btn btn-link text-start d-block">Privacy Policy</a>
+                        <a href="" class="btn btn-link text-start d-block">Terms & Conditions</a>
+                    </div>
+        
+                    <!-- Contact Section -->
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <h4 class="section-title ff-secondary text-primary fw-normal mb-4" style="font-family: Aladin;">
+                            Contact
+                        </h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt"></i> 143 Street, Chennai, India</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt"></i> +91 9092587112</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i> csuriya597@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-facebook"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-youtube"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+        
+                    <!-- Opening Hours -->
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <h4 class="section-title ff-secondary text-primary fw-normal mb-4" style="font-family:Aladin;">
+                            Opening Hours
+                        </h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+        
+                    <!-- Business Info -->
+                    <div class="col-lg-3 col-md-6 text-start">
+                        <h4 class="section-title ff-secondary text-primary fw-normal mb-4" style="font-family:Trade winds;">
+                            Certification
+                        </h4>
+                        <p>This certificate confirms the official opening date of the shop as [1971]. ISI certified. It serves as a record of establishment for business purposes.</p>
+                    </div>
+                </div>
+        
+                <!-- Copyright -->
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                &copy; <a class="border-bottom" href="">Suriya, All Rights Reserved</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- 
+    bootstrap js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+
+
+        <!-- bootstrap js -->
+        <script src="./travel.js"></script>
+
+</body>
+
+</html>
